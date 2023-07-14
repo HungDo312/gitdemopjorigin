@@ -22,7 +22,6 @@ function useClock(props) {
             setTimeString(newTimeString)
 
             return () => {
-                console.log('CLock cleanup')
                 clearInterval(clockInterval)
             }
         }, 1000);
